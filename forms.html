@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="forms.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    </title>
+</head>
+<body>
+    <form class="survey-form" action="get">
+        <header class="box">
+            <h1 class="survey-title-header">나와 잘  맞는 회사는?</h1>
+            <p class="survey-title-description">가고 싶은 회사에 대한 호감도를 조사합니다. </p>
+        </header>
+
+    <fieldset class ="box" action="">
+        <p class="survey-question">다음 문자중에 왠지 마음에 드는 것을 하나 고르세요</p>
+        <div>
+            <input type="radio" id="naver" name="company" value="naver" required>
+            <label for="naver">네</label>
+        </div>
+        <div>
+            <input type="radio" id="kakao" name="company" value="kakao">
+            <label for="kakao">카</label>
+        </div>
+        <div>
+            <input type="radio" id="line" name="company" value="line">
+            <label for="line">라</label>
+        </div>
+        <div>
+            <input type="radio" id="coupang" name="company" value="coupang">
+            <label for="coupang">쿠</label>
+        </div>
+        <div>
+            <input type="radio" id="baemin" name="company" value="baemin">
+            <label for="baemin">배</label>
+        </div>
+    </fieldset>
+    
+    <fieldset class ="box" action="">
+        <p class="survey-question">친구와 문자를 합니다. 다음중 어떤 메신저를 이용하시겠습니까? 모두 골라주세요.</p>
+        <div>
+            <input type="checkbox" id="kakao-messenger" name="messenger" value="kakao">
+            <label for="kakao-messenger">카카오</label>
+        </div>
+        <div>
+            <input type="checkbox" id="line-messenger" name="messenger" value="line">
+            <label for="line-messenger">라인</label>
+        </div>
+        <div>
+            <input type="checkbox" id="insta-messenger" name="messenger" value="instagram">
+            <label for="insta-messenger">인스타그램 디엠</label>
+        </div>
+        <div>
+            <input type="checkbox" id="nateon-messenger" name="messenger" value="nateon">
+            <label for="nateon-messenger">네이트온</label>
+        </div>
+        <div>
+            <input type="checkbox" id="budybudy-messenger" name="messenger" value="budybudy">
+            <label for="budybudy-messenger">버디버디</label>
+        </div>
+    </fieldset>
+    
+    <fieldset class ="box" action="">
+        <p class="survey-question">면접에서 자신의 포부를 한 문장으로 얘기한다면?</p>
+        <div>
+            <label class="hidden" for="interview-answer">면접 답변 한문장</label>
+            <input class="input-text" type="text" id="interview-answer" placeholder="내 답변" required>
+        </div>
+    </fieldset>
+    
+    <fieldset class ="box" action="">
+        <p class="survey-question">당신은 지금 한 기업의 최종 면접을 앞두고 있습니다. 면접장에 들어가기 직전, 자기 자신에게 해주고 싶은 말은?</p>
+        <div>
+            <label class="hidden" for="last-interview-answer">최종 면접 답변</label>
+            <input class="input-text-long" type="text" id="last-interview-answer" placeholder="내 답변" required>
+        </div>
+    </fieldset>
+    
+    <fieldset class ="box" action="">
+        <label for="skill-select" class="survey-question">다음 중 기술 면접때 듣고 싶은 질문이 아닌 것은?</label>
+        <div>
+            <select class="select-box" name="skills" id="skill-select">
+                <option value="" required>선택</option>
+                <option value="hosting">호스팅</option>
+                <option value="IP">IP</option>
+                <option value="DNS">DNS</option>
+                <option value="ISP">ISP</option>
+            </select>
+        </div>
+    </fieldset>
+    
+    <fieldset class ="box" action="">
+        <p class="survey-question">취업을 희망하는 날짜를 선택해주세요</p>
+        <div>
+        <label for="survey-date" class="survey-label">날짜</label>
+            <input class="input-date" type="date" id="survey-date" name="date" value="2022-08-01" min="2022-01-01" max="2022-12-31">
+        </div>
+    </fieldset>
+    
+    
+    <fieldset class ="box" action="">
+        <p class="survey-question">업무를 시작하기에 가장 적당한 시간을 고르세요.</p>
+        <div>
+        <label for="survey-time" class="survey-label">시간</label>
+            <input class="input-time" type="time" id="survey-time" name="time" min="9:00" max="18:00" required>
+        </div>
+    </fieldset>
+
+    <div class="bottom-buttons">
+        <input class="submit-button" type="submit">
+        <input class="reset-button" type="reset" value="양식 지우기">
+    </div>
+    </form>
+</body>
+</html>
